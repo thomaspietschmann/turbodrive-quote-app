@@ -1,3 +1,5 @@
+<%= turbo_stream_from "quotes" %>
+
 <main class="container">
 
     <div class="header">
@@ -6,7 +8,7 @@
                 new_quote_path,
                 class: "btn btn--primary",
                 data: { turbo_frame: dom_id(Quote.new) } %>                      
-              %>
+          
     </div>
 
 
