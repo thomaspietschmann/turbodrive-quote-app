@@ -1,4 +1,4 @@
-<%= turbo_stream_from "quotes" %>
+<%= turbo_stream_from current_company, "quotes" %>
 
 <main class="container">
 
@@ -10,7 +10,6 @@
                 data: { turbo_frame: dom_id(Quote.new) } %>                      
           
     </div>
-
 
     <%= turbo_frame_tag Quote.new %>
 
